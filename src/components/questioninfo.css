@@ -1,0 +1,130 @@
+.question-container {
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fffffe;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  padding: 24px;
+  width: 500px;
+}
+
+.question-container .timer {
+  align-items: center;
+  background-color: #7f5af0;
+  border-radius: 50%;
+  display: flex;
+  font-weight: 600;
+  height: 90px;
+  justify-content: center;
+  margin-bottom: -50px;
+  margin-left: -132px;
+  text-align: center;
+  width: 90px;
+}
+
+.question-category {
+  margin: 0;
+  text-align: center;
+}
+
+.category {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.question-text {
+  text-align: center;
+}
+
+.question {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.correct-answer {
+  background-color: #7b8796;
+  border: 0;
+  border-radius: 4px;
+  color: #fffffe;
+  cursor: pointer;
+  font-family: Courgette , cursive;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 6px;
+  transition: background-color 0.2s;
+}
+
+.correct-answer:hover {
+  background-color: #555d68;
+}
+
+.incorrect-answer {
+  background-color: #7b8796;
+  border: 0;
+  border-radius: 4px;
+  color: #fffffe;
+  cursor: pointer;
+  font-family: Courgette , cursive;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 6px;
+  transition: background-color 0.2s;
+}
+
+.incorrect-answer:hover {
+  background-color: #555d68;
+}
+
+.incorrect-answer:active {
+  transform: scale(0.98);
+}
+
+.questionCorrect {
+  background-color: #7b8796;
+  border: 3px solid rgb(6, 240, 15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 6px;
+  transition: background-color 0.2s;
+}
+
+.questionWrong {
+  background-color: #7b8796;
+  border: 3px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-next {
+  background-color: #7f5af0;
+  border: none;
+  color: #fffffe;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px;
+  transition: background-color 0.2s;
+  visibility: hidden;
+}
+
+.btn-next:hover {
+  background-color: #5c41ad;
+}
+
+.btn-next.visible {
+  visibility: visible;
+}
+
+.changeStyle {
+  background-color: #c9c8c8;
+  border: 3px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 6px;
+  transition: background-color 0.2s;
+}

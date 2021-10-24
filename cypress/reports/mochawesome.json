@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-06T18:59:36.973Z",
+    "end": "2021-08-06T19:00:17.709Z",
+    "duration": 40736,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ad3654fd-9115-4ed1-9764-a7f0977eb506",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "29a023d0-20bb-4287-92bd-61b262ca9654",
+          "title": "11 - [TELA DE JOGO] Desenvolva o jogo de forma que a pessoa que joga deve responder 5 perguntas no total",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acerta todas as perguntas",
+              "fullTitle": "11 - [TELA DE JOGO] Desenvolva o jogo de forma que a pessoa que joga deve responder 5 perguntas no total Acerta todas as perguntas",
+              "timedOut": null,
+              "duration": 15229,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.lt(after.player.score);\n});",
+              "err": {},
+              "uuid": "031be3ef-7423-4d5c-9959-8e6966f4f8fd",
+              "parentUUID": "29a023d0-20bb-4287-92bd-61b262ca9654",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Erra todas as perguntas",
+              "fullTitle": "11 - [TELA DE JOGO] Desenvolva o jogo de forma que a pessoa que joga deve responder 5 perguntas no total Erra todas as perguntas",
+              "timedOut": null,
+              "duration": 10146,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.eq(after.player.score);\n});",
+              "err": {},
+              "uuid": "8f5721b4-a48c-413f-a5da-d0212faad5ab",
+              "parentUUID": "29a023d0-20bb-4287-92bd-61b262ca9654",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Redireciona para a tela de _feedback_ após a quinta pergunta",
+              "fullTitle": "11 - [TELA DE JOGO] Desenvolva o jogo de forma que a pessoa que joga deve responder 5 perguntas no total Redireciona para a tela de _feedback_ após a quinta pergunta",
+              "timedOut": null,
+              "duration": 8772,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "32fff035-f8a6-4409-a926-44445ed53305",
+              "parentUUID": "29a023d0-20bb-4287-92bd-61b262ca9654",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "031be3ef-7423-4d5c-9959-8e6966f4f8fd",
+            "8f5721b4-a48c-413f-a5da-d0212faad5ab",
+            "32fff035-f8a6-4409-a926-44445ed53305"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 34147,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
