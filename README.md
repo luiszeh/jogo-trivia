@@ -1,5 +1,17 @@
 # Boas vindas ao repositório do projeto de Trivia!
 
+https://user-images.githubusercontent.com/78225894/138801148-6e3c23df-0e18-4ee5-8d7b-d65ecee5f980.mp4
+
+## Equipe:
+
+<a href="https://www.linkedin.com/in/armando-starling/">Armando Starling</a>
+
+<a href="https://www.linkedin.com/in/gabrielmedeiro5/">Gabriel Medeiros</a>
+
+<a href="https://www.linkedin.com/in/luisffg/">Luis Fernando Fonseca</a>
+
+<a href="https://www.linkedin.com/in/renanferreira8/">Renan Ferreira</a>
+
 # Habilidades trabalhadas:
 
 
@@ -17,7 +29,7 @@
 
 ## O que foi desenvolvido
 
-Um jogo de perguntas e respostas baseado no jogo **Trivia** _(tipo um show do milhão americano rs)_ utilizando _React e Redux_, desenvolvendo em grupo suas funcionalidades de acordo com as demanas definidas em um quadro _Kanban_. Para viver um cenário mais próximo do mercado de trabalho, utilizamos o Trello para aplicar o método ágil Kanban. A partir dessas demandas, teremos uma aplicação onde a pessoa usuária poderá:
+Um jogo de perguntas e respostas baseado no jogo **Trivia** _(tipo um show do milhão americano)_ utilizando _React e Redux_, desenvolvendo com o time suas funcionalidades de acordo com as demanas definidas em um quadro _Kanban_. Para viver um cenário mais próximo do mercado de trabalho, utilizamos o Trello para aplicar o método ágil Kanban. A partir dessas demandas, teremos uma aplicação onde a pessoa usuária poderá:
 
   - Logar no jogo e, se o email tiver cadastro no site [Gravatar](https://pt.gravatar.com/), ter sua foto associada ao perfil de usuária.
   - Acessar a página referente ao jogo, onde se deverá escolher uma das respostas disponíveis para cada uma das perguntas apresentadas. A resposta deve ser marcada antes do contador de tempo chegar a zero, caso contrário a resposta deverá ser considerada errada.
@@ -28,6 +40,8 @@ Um jogo de perguntas e respostas baseado no jogo **Trivia** _(tipo um show do mi
 ### Rodando o projeto:
 
  Instale as dependências e inicialize o projeto
+  * Clone o repositório:
+    * `git clone git@github.com:luiszeh/jogo-trivia.git`
   * Instale as dependências:
     * `npm install`
   * Inicialize o projeto:
@@ -361,3 +375,5 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 ##### 21. Ao mudar o valor do dropdown tipo, apenas perguntas do tipo selecionado devem aparecer para a pessoa que está jogando. Essa configuração será identificada pela chave type no retorno da API.
 
 ***Obs: A maneira como a API deve ser estruturada segue o seguinte modelo: https://opentdb.com/api_config.php***
+
+Projeto proposto pela Trybe.
