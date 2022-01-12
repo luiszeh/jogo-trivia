@@ -12,6 +12,8 @@ https://user-images.githubusercontent.com/78225894/138801148-6e3c23df-0e18-4ee5-
 
 <a href="https://www.linkedin.com/in/renanferreira8/">Renan Ferreira</a>
 
+* Projeto proposto pela <a href="https://www.betrybe.com/">Trybe</a> e requisitos desenvolvidos pela equipe.
+
 # Habilidades trabalhadas:
 
 
